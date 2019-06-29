@@ -1,8 +1,8 @@
-# AV3-dsv
+# evs-dsv
 改模块为文本分隔符分隔进行解析，常见的数据格式为逗号分隔的csv文件或制表符分割的tsv文件，这些表格非常受excel欢迎，而且比json更节省空间，代码实现基于论文[RFC 4180](https://tools.ietf.org/html/rfc4180)Common Format and MIME Type for Comma-Separated Values (CSV) Files.  
 
 # API参考与算法解析：  
-### AV3.dsvFormat(delimiter):  
+### evs.dsvFormat(delimiter):  
 为指定的dsv构造一个新的dsv解析器和格式化程序，分割符必须为单个字符，如ASCII码  
 
 ### dsv.parse(string[, row])
@@ -111,7 +111,7 @@ Year,Make,Model,Length
 1997,Ford,E350,2.34
 2000,Mercury,Cougar,2.38
 ```
-使用AV3.csvParse:  
+使用evs.csvParse:  
 ```
 d3.csvParse(string, d3.autoType)
 ```
@@ -185,26 +185,26 @@ while((t=token()) !== EOF){
             * */
 ```
 上面5个接口就是最基本的就是最基本的实现，可以自定义一个分隔符，实现文本转对象数组以及对象数组转文本，另外作者添加了2个指定分隔符的接口，方便我们使用，一个时用逗号分隔符,对应csv格式文件：  
-### AV3.csvParse(string[, row])
+### evs.csvParse(string[, row])
 对应dsvFormat(",").parse.  
-### AV3.csvParseRows(string[, row])
+### evs.csvParseRows(string[, row])
 对应 dsvFormat(",").parseRows.  
-### AV3.csvFormat(rows[, columns])
+### evs.csvFormat(rows[, columns])
 对应 dsvFormat(",").format.  
-### AV3.csvFormatBody(rows[, columns])
+### evs.csvFormatBody(rows[, columns])
 对应 dsvFormat(",").formatBody.  
-### AV3.csvFormatRows(rows)
+### evs.csvFormatRows(rows)
 对应 dsvFormat(",").formatRows.  
 另一个是\t为分隔符的tsv文件：  
-### AV3.tsvParse(string[, row])
+### evs.tsvParse(string[, row])
 对应 dsvFormat("\t").parse.  
-### AV3.tsvParseRows(string[, row])
+### evs.tsvParseRows(string[, row])
 对应 dsvFormat("\t").parseRows.  
-### AV3.tsvFormat(rows[, columns])
+### evs.tsvFormat(rows[, columns])
 对应 dsvFormat("\t").format.  
-### AV3.tsvFormatBody(rows[, columns])
+### evs.tsvFormatBody(rows[, columns])
 对应 dsvFormat("\t").formatBody.  
-### AV3.tsvFormatRows(rows)
+### evs.tsvFormatRows(rows)
 对应 dsvFormat("\t").formatRows.  
 
 此外，作者还实现三个不同格式文本转换的命令行工具，dsv2dsv/dsv2json/json2dsv感兴趣的可以去看代码[格式转换node工具](https://github.com/d3/d3-dsv/tree/master/bin)。
@@ -213,7 +213,7 @@ while((t=token()) !== EOF){
 dsv.format()、dsv.formatBody()、dsv.formatRows()这三个函数第一个就是将正常的对象数组转化为自定义分隔符的字符串，第二个忽略计算标题，相当于去掉了标题行，前面也提到了用途就是附加到其他文件时，第三个函数呢就是将二维数组转化为了分隔符的字符串。  
 dsv.parse()、dsv.praseRows()这两个函数，parse依赖于praseRows,就是多处理了标题行。  
 
-对于不需要处理复杂数据人使用时，我们完全只需要使用的功能就是将csv文件读入，然后保存为对象数组，只使用AV3.csvParse(data)就足够了。  
+对于不需要处理复杂数据人使用时，我们完全只需要使用的功能就是将csv文件读入，然后保存为对象数组，只使用evs.csvParse(data)就足够了。  
 另外我想了个名字，叫Evs，含义就是easy vis，简单可视化，因为后面有想法写一些更简单使用的接口，或者说魔板页面，让用户轻松实现非常好的效果。  
 
 # 深度阅读：  
