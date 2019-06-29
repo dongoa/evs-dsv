@@ -185,26 +185,26 @@ while((t=token()) !== EOF){
             * */
 ```
 上面5个接口就是最基本的就是最基本的实现，可以自定义一个分隔符，实现文本转对象数组以及对象数组转文本，另外作者添加了2个指定分隔符的接口，方便我们使用，一个时用逗号分隔符,对应csv格式文件：  
-### AV3.csvParse(string[, row]):
+### AV3.csvParse(string[, row])
 对应dsvFormat(",").parse.  
-### AV3.csvParseRows(string[, row]) 
+### AV3.csvParseRows(string[, row])
 对应 dsvFormat(",").parseRows.  
-### AV3.csvFormat(rows[, columns]) 
+### AV3.csvFormat(rows[, columns])
 对应 dsvFormat(",").format.  
-### AV3.csvFormatBody(rows[, columns]) 
+### AV3.csvFormatBody(rows[, columns])
 对应 dsvFormat(",").formatBody.  
-### AV3.csvFormatRows(rows) 
+### AV3.csvFormatRows(rows)
 对应 dsvFormat(",").formatRows.  
 另一个是\t为分隔符的tsv文件：  
-### AV3.tsvParse(string[, row]) 
+### AV3.tsvParse(string[, row])
 对应 dsvFormat("\t").parse.  
-### AV3.tsvParseRows(string[, row]) 
+### AV3.tsvParseRows(string[, row])
 对应 dsvFormat("\t").parseRows.  
-### AV3.tsvFormat(rows[, columns]) 
+### AV3.tsvFormat(rows[, columns])
 对应 dsvFormat("\t").format.  
-### AV3.tsvFormatBody(rows[, columns]) 
+### AV3.tsvFormatBody(rows[, columns])
 对应 dsvFormat("\t").formatBody.  
-### AV3.tsvFormatRows(rows) <>
+### AV3.tsvFormatRows(rows)
 对应 dsvFormat("\t").formatRows.  
 
 此外，作者还实现三个不同格式文本转换的命令行工具，dsv2dsv/dsv2json/json2dsv感兴趣的可以去看代码[格式转换node工具](https://github.com/d3/d3-dsv/tree/master/bin)。
