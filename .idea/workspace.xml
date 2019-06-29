@@ -85,6 +85,9 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -107,12 +110,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="577" />
-    <option name="y" value="212" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="104" />
+    <option name="y" value="109" />
     <option name="width" value="1646" />
     <option name="height" value="1002" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -166,15 +170,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561738243232</updated>
-      <workItem from="1561738244570" duration="20558000" />
+      <workItem from="1561738244570" duration="21108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20558000" />
+    <option name="totallyTimeSpent" value="21108000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="577" y="212" width="1646" height="1002" extended-state="0" />
+    <frame x="104" y="109" width="1646" height="1002" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2947761" />
@@ -182,7 +186,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />

@@ -1,5 +1,5 @@
 # evs-dsv
-改模块为文本分隔符分隔进行解析，常见的数据格式为逗号分隔的csv文件或制表符分割的tsv文件，这些表格非常受excel欢迎，而且比json更节省空间，代码实现基于论文[RFC 4180](https://tools.ietf.org/html/rfc4180)Common Format and MIME Type for Comma-Separated Values (CSV) Files.  
+该模块为文本分隔符分隔进行解析，常见的数据格式为逗号分隔的csv文件或制表符分割的tsv文件，这些表格非常受excel欢迎，而且比json更节省空间，代码实现基于论文[RFC 4180](https://tools.ietf.org/html/rfc4180)Common Format and MIME Type for Comma-Separated Values (CSV) Files.  
 
 # API参考与算法解析：  
 ### evs.dsvFormat(delimiter):  
